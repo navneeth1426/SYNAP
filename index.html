@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SYNAP - The Navigator</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="main-header">
+    <div class="logo">SYNAP</div>
+    
+</header>
+
+    <main>
+        <main>
+    
+
+    
+
+    <section id="main-dashboard" class="app-page">
+        <h1>Welcome to SYNAP</h1>
+        <p>Synergy Your New Assistant Partner. What's on your mind today?</p>
+        <div class="dashboard-grid">
+            <button class="nav-button" data-target="navigator-page">
+                <h3>The Navigator</h3>
+                <p>Plan, track, and manage your time and tasks.</p>
+            </button>
+            <button class="nav-button" data-target="streamline-page">
+                <h3>The Streamline</h3>
+                <p>Curated movies, shows, and entertainment.</p>
+            </button>
+            <button class="nav-button" data-target="decompress-page">
+                <h3>The Decompress</h3>
+                <p>Books, music, and relaxation (Coming Soon!)</p>
+            </button>
+        </div>
+    </section>
+
+    <div id="navigator-page" class="app-page hidden">
+        <button class="back-button" data-target="main-dashboard">← Back to Main</button>
+        <section class="app-section">
+            <h1>The Navigator</h1>
+            <p>Your task map. Plan, manage, and never miss a beat.</p>
+            
+            <div class="navigator-container">
+                <div class="task-input-area">
+                    <input type="text" id="task-input" placeholder="What's your plan or event?">
+                    <input type="datetime-local" id="date-time-input">
+                    <button id="add-task-btn">Add Plan</button>
+                </div>
+
+                <ul id="task-list">
+                    </ul>
+            </div>
+            </section>
+    </div>
+
+   <div id="streamline-page" class="app-page hidden">
+        <button class="back-button" data-target="main-dashboard">← Back to Main</button>
+        <section class="app-section">
+            <h1>The Streamline</h1>
+            <p>Ready to relax? Find your next binge-worthy entertainment.</p>
+
+            <div class="streamline-grid">
+                
+                <a href="https://www.imdb.com/chart/top/" target="_blank" class="streamline-button">
+                    <h3>IMDB Top 250</h3>
+                    <p>The highest-rated movies of all time.</p>
+                </a>
+                
+                <a href="https://www.rottentomatoes.com/browse/movies_at_home/sort/new_releases" target="_blank" class="streamline-button">
+                    <h3>New on Rotten Tomatoes</h3>
+                    <p>Latest releases and critic scores for streaming.</p>
+                </a>
+                
+                <a href="https://www.google.com/search?q=trending+shows+now" target="_blank" class="streamline-button">
+                    <h3>Google Trending Shows</h3>
+                    <p>What the world is searching for right now.</p>
+                </a>
+                
+                <a href="https://www.netflix.com/browse/genre/83" target="_blank" class="streamline-button">
+                    <h3>Netflix Originals</h3>
+                    <p>Jump straight to the latest Netflix releases.</p>
+                </a>
+
+            </div>
+        </section>
+    </div>
+   <div id="decompress-page" class="app-page hidden">
+        <button class="back-button" data-target="main-dashboard">← Back to Main</button>
+        <section class="app-section">
+            <h1>The Decompress</h1>
+            <p>Your sanctuary for curated books, music, and quiet moments.</p>
+
+            <div class="coming-soon">
+                <h2>Coming Soon!</h2>
+                <p>We're working hard to bring you a curated selection of books, music, and relaxation tools. Stay tuned!</p>
+        </section>
+    </div> 
+   
+</main>
+
+    <footer>
+        <p>&copy; 2025 SYNAP. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
